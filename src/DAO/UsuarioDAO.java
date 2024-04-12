@@ -5,13 +5,12 @@ import java.sql.SQLException;
 
 // Importando a classe de conexão para estabelecer uma conexão com o banco de dados
 import conexao.Conexao;
-import entity.Usuario;
 
 // Esta classe manipula as operações de acesso a dados relacionadas aos usuários
 public class UsuarioDAO {
     
 // Método para cadastrar um novo usuário no banco de dados
-public void cadastrarUsuario(Usuario usuario){
+public void cadastrarArrecado_dia(UsuarioDAO usuario){
 
 // Consulta SQL para inserir os dados do usuário na tabela 'arrecadado_dia'
 String sql = "insert into arrecadado_dia (dia, placa_veiculo, id_motorista, arrecadado_uber, arrecadado_99, arrecadado_indrive, arrecadado_outros) values (?,?,?,?)";
@@ -44,4 +43,39 @@ PreparedStatement ps = null;
             e.printStackTrace();
         }
     }
+
+private float getArrecadado_outros() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getArrecadado_outros'");
+}
+
+private float getArrecadado_indrive() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getArrecadado_indrive'");
+}
+
+private float getArrecadado_99() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getArrecadado_99'");
+}
+
+private float getArrecadado_uber() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getArrecadado_uber'");
+}
+
+private String getId_motorista() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getId_motorista'");
+}
+
+private String getPlaca_veiculo() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getPlaca_veiculo'");
+}
+
+private String getDia() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getDia'");
+}
 }

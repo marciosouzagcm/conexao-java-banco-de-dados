@@ -1,7 +1,7 @@
 package entity;
 
 // Classe que representa um usuário
-public class Usuario {
+public class Arrecadado_dia {
 
     // Atributos do usuário
     private int codigo;
