@@ -11,7 +11,7 @@ public class Conexao {
 public static final String URL = "jdbc:Mysql://localhost:3306/motorista_aplicativo";
 
 // Nome de usuário do banco de dados
-public static final String USER = "root";
+public static final String  USER = "root";
 
 // Senha do usuário do banco de dados
 public static final String PASSWORD = "seguRa1$";
@@ -47,12 +47,12 @@ public static Connection getConexao() {
     }
 
     // Método para retornar o nome de usuário
-    public static String getUser() {
+    public String getUser() {
         return USER;
     }
 
     // Método para retornar o nome de usuário
-    public static String getPassword(String password) {
+    public String getPassword(String password) {
         return password;
     }
     // Método para retornar o objeto de conexão
