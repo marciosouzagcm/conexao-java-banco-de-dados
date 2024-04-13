@@ -2,7 +2,6 @@ import entity.Arrecadado_dia;
 
 public class App {
     private static final String dia = null;
-    private static final String New = null;
 
 
     public static <Arrecadado_dia> void main(String[] args) throws Exception {
@@ -24,8 +23,4 @@ public class App {
     public String toString() {
         return "App []";
     }
-
-	public static float getArrecadado_99() {
-	    return getArrecadado_99();
-	}
 }
