@@ -1,10 +1,10 @@
-package entity;
+package DAO;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-// Importando a classe de conexão para estabelecer uma conexão com o banco de dados
 import conexao.Conexao;
+import entity.Arrecadado_dia;
 
 // Esta classe manipula as operações de acesso a dados relacionadas aos usuários
 public class UsuarioDAO {
