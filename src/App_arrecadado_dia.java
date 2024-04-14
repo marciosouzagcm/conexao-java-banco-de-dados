@@ -5,7 +5,7 @@ public class App_arrecadado_dia {
 
 
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
        
         Arrecadado_dia u = new Arrecadado_dia();
 
