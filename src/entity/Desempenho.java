@@ -2,6 +2,7 @@ package entity;
 
 public class Desempenho {
     
+    
     private int corridas_dia_uber;
     private int corridas_dia_99;
     private int corridas_dia_indrive;
