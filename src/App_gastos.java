@@ -9,13 +9,13 @@ public class App_gastos {
        
         Gastos u = new Gastos();
 
-        u.setDia("2024-04-13");
-        u.setAluguel_veiculo((float)84.94);
-        u.setCombustível((float)100.00);
+        u.setDia("  ");
+        u.setAluguel_veiculo((float)0.00);
+        u.setCombustível((float)0.00);
         u.setImposto_previdência((float)0.00);
         u.setImposto_privado((float)0.00);
         u.setManutenção_veiculo((float)0.00);
-        u.setAlimentação((float)7.00);
+        u.setAlimentação((float)0.00);
         u.setInvestimentos((float)0.00);
         u.setConsórcio((float)0.00);
 
