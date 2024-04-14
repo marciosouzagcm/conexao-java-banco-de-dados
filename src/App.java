@@ -15,10 +15,6 @@ public class App {
         u.setArrecadado_outros(25.00);
     }
 
-    private static void extracted(entity.Arrecadado_dia u) {
-        u.setArrecadado_uber(120.00);
-    }
-
     @Override
     public String toString() {
         return "App []";
