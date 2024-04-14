@@ -13,6 +13,8 @@ public class App_arrecadado_dia {
         u.setPlaca_veiculo("SDI0I76");
         u.setId_motorista("Márcio Almeida de Souza");
         u.setArrecadado_uber((float) 130.00);
+        u.setArrecadado_indrive((float)50.00);
+        u.setArrecadado_outros((float)25.00);
 
 
     new Arrecadado_diaDAO().cadastrarArrecadado_dia(u);
