@@ -40,17 +40,14 @@ public static Connection getConexao() {
             return null;
         }
     }
-
     // Método para retornar a URL de conexão
     public static String getUrl() {
         return URL;
     }
-
     // Método para retornar o nome de usuário
     public String getUser() {
         return USER;
     }
-
     // Método para retornar o nome de usuário
     public String getPassword(String password) {
         return password;
@@ -59,7 +56,6 @@ public static Connection getConexao() {
     public static Connection getConn() {
         return conn;
     }
-
     // Método para definir o objeto de conexão
     public static void setConn(Connection conn) {
         Conexao.conn = conn;
