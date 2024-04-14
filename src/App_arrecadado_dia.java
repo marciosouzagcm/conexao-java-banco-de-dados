@@ -9,13 +9,13 @@ public class App_arrecadado_dia {
        
         Arrecadado_dia u = new Arrecadado_dia();
 
-        u.setDia("200240414");
+        u.setDia("2024-04-13");
         u.setPlaca_veiculo("SDI0I76");
         u.setId_motorista("Márcio Almeida de Souza");
-        u.setArrecadado_uber((float) 130.00);
-        u.setArrecadado_99((float)100.00);
-        u.setArrecadado_indrive((float)50.00);
-        u.setArrecadado_outros((float)25.00);
+        u.setArrecadado_uber((float) 92.31);
+        u.setArrecadado_99((float)140.34);
+        u.setArrecadado_indrive((float)17.99);
+        u.setArrecadado_outros((float)0.00);
 
 
     new Arrecadado_diaDAO().cadastrarArrecadado_dia(u);
