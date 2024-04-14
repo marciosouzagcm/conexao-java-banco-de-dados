@@ -38,7 +38,7 @@ public class Arrecadado_dia {
     public static String getDia() {
         return dia;
     }
-    public void setArrecadado_dia(String dia) {
+    public void setDia(String dia) {
         this.dia = dia;
     }
     public static String getPlaca_veiculo() {
@@ -172,10 +172,6 @@ public class Arrecadado_dia {
     public static float getArrecadado_99() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getArrecadado_99'");
-    }
-    public void setDia(String string) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setDia'");
     }
 }
 

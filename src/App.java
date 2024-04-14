@@ -7,7 +7,7 @@ public class App {
     public static <Arrecadado_dia> void main(String[] args) throws Exception {
        
         entity.Arrecadado_dia u = new entity.Arrecadado_dia();
-        u.setDia("200240413");
+        u.setDia("200240414");
         u.setPlaca_veiculo("SDI0I76");
         u.setId_motorista("Márcio Almeida de Souza");
         u.setArrecadado_99(130.00);
