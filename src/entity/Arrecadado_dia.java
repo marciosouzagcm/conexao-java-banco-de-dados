@@ -3,7 +3,6 @@ package entity;
 // Classe que representa um usuário
 public class Arrecadado_dia {
 
-    private int codigo;
     private static String dia;
     private static String placa_veiculo;
     private static String id_motorista;
@@ -29,12 +28,6 @@ public class Arrecadado_dia {
 
     // Atributos do usuário
     
-    public int getCodigo() {
-        return codigo;
-    }
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
     public static String getDia() {
         return dia;
     }

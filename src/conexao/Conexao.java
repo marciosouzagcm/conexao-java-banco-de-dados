@@ -8,13 +8,13 @@ import java.sql.SQLException;
 public class Conexao {
 
 // URL de conexão com o banco de dados
-public static final String URL = "jdbc:Mysql://localhost:3306/motorista_aplicativo";
+private static final String URL = "jdbc:Mysql://localhost:3306/motorista_aplicativo";
 
 // Nome de usuário do banco de dados
-public static final String  USER = "root";
+private static final String  USER = "root";
 
 // Senha do usuário do banco de dados
-public static final String PASSWORD = "seguRa1$";
+private static final String PASSWORD = "seguRa1$";
 
 // Objeto de conexão
 private static Connection conn;
