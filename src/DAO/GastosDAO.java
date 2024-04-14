@@ -11,7 +11,7 @@ public class GastosDAO {
     public void cadastrarGastos(Gastos Gastos){
 
 // Consulta SQL para inserir os dados do usuário na tabela 'arrecadado_dia'
-String sql = "INSERT INTO GASTOS(dia, aluguel_veiculo, combustivel, imposto_previdência, imposto_privado, manutencao_veiculo, alimentacao,investimentos, consórcio) values (?,?,?,?)";
+String sql = "Insert into gastos(dia, aluguel_veiculo, combustível, imposto_previdência, imposto_privado, manutenção_veiculo, alimentação,investimentos, consórcio) values (?,?,?,?,?,?,?,?,?)";
 
 // Inicializando o PreparedStatement para executar instruções SQL
 PreparedStatement ps = null;
@@ -23,11 +23,11 @@ PreparedStatement ps = null;
         // Definindo parâmetros para o PreparedStatement com os dados do usuário
         ps.setString(1,Gastos.getDia());
         ps.setFloat(2, Gastos.getAluguel_veiculo());
-        ps.setFloat(3, Gastos.getCombustivel());
+        ps.setFloat(3, Gastos.getCombustível());
         ps.setFloat(4, Gastos.getImposto_previdência());
         ps.setFloat(5, Gastos.getImposto_privado());
-        ps.setFloat(6, Gastos.getManutencao_veiculo());
-        ps.setFloat(7, Gastos.getAlimentacao());
+        ps.setFloat(6, Gastos.getManutenção_veiculo());
+        ps.setFloat(7, Gastos.getAlimentação());
         ps.setFloat(8, Gastos.getInvestimentos());
         ps.setFloat(9, Gastos.getConsórcio());
 

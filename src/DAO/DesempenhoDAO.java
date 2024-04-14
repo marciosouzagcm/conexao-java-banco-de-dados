@@ -11,7 +11,7 @@ public class DesempenhoDAO {
     public void cadastrarDesempenho(Desempenho Desempenho){
 
 // Consulta SQL para inserir os dados do usuário na tabela 'arrecadado_dia'
-String sql = "INSERT INTO DESEMPENHO(corridas_dia_uber, corridas_dia_99, corridas_dia_indrive, online_uber,online_99, online_indrive, total_km_dia) values (?,?,?,?)";
+String sql = "INSERT INTO DESEMPENHO(corridas_dia_uber, corridas_dia_99, corridas_dia_indrive, online_uber,online_99, online_indrive, total_km_dia) values (?,?,?,?,?,?,?)";
 
 // Inicializando o PreparedStatement para executar instruções SQL
 PreparedStatement ps = null;

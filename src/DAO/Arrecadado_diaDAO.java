@@ -9,12 +9,12 @@ import entity.Arrecadado_dia;
 // Esta classe manipula as operações de acesso a dados relacionadas aos usuários
 public class Arrecadado_diaDAO {
     
-// Método para cadastrar um novo usuário no banco de dados
+// Método para cadastrar uma nova informação na tabela mysql
 
 public void cadastrarArrecadado_dia(Arrecadado_dia Arrecadado_dia){
 
-// Consulta SQL para inserir os dados do usuário na tabela 'arrecadado_dia'
-String sql = "INSERT INTO ARRECADADO_DIA(dia, placa_veiculo, id_motorista, arrecadado_uber, arrecadado_99, arrecadado_indrive, arrecadado_outros) values (?,?,?,?,?,?,?)";
+// Consulta SQL para inserir os dados do usuário na tabela "arrecadado_dia";
+String sql = "Insert into arrecadado_dia(dia, placa_veiculo, id_motorista, arrecadado_uber, arrecadado_99, arrecadado_indrive, arrecadado_outros) values (?,?,?,?,?,?,?)";
 
 // Inicializando o PreparedStatement para executar instruções SQL
 PreparedStatement ps = null;

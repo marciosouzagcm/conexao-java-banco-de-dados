@@ -6,11 +6,11 @@ public class Gastos {
 
     private String dia;
     private float aluguel_veiculo;
-    private float combustivel;
+    private float combustível;
     private float imposto_previdência;
     private float imposto_privado;
-    private float alimentacao;
-    private float manutencao_veiculo;
+    private float alimentação;
+    private float manutenção_veiculo;
     private float investimentos;
     private float consórcio;
 
@@ -28,12 +28,12 @@ public class Gastos {
     public void setAluguel_veiculo(float aluguel_veiculo) {
         this.aluguel_veiculo = aluguel_veiculo;
     }
-    public float getCombustivel() {
-        return combustivel;
+    public float getCombustível() {
+        return combustível;
     }
 
-    public void setCombustivel(float combustivel) {
-        this.combustivel = combustivel;
+    public void setCombustível(float combustível) {
+        this.combustível = combustível;
     }
 
     public float getImposto_previdência() {
@@ -49,17 +49,17 @@ public class Gastos {
     public void setImposto_privado(float imposto_privado) {
         this.imposto_privado = imposto_privado;
     }
-    public float getAlimentacao() {
-        return alimentacao;
+    public float getAlimentação() {
+        return alimentação;
     }
-    public void setAlimentacao(float alimentacao) {
-        this.alimentacao = alimentacao;
+    public void setAlimentação(float alimentação) {
+        this.alimentação = alimentação;
     }
-    public float getManutencao_veiculo() {
-        return manutencao_veiculo;
+    public float getManutenção_veiculo() {
+        return manutenção_veiculo;
     }
-    public void setManutencao_veiculo(float manutencao_veiculo) {
-        this.manutencao_veiculo = manutencao_veiculo;
+    public void setManutenção_veiculo(float manutenção_veiculo) {
+        this.manutenção_veiculo = manutenção_veiculo;
     }
     public float getInvestimentos() {
         return investimentos;
