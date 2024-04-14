@@ -3,7 +3,7 @@ package entity;
 // Classe que representa um usuário
 public class Arrecadado_dia {
 
-    private static String dia;
+    public static String dia;
     private static String placa_veiculo;
     private static String id_motorista;
     private static Float arrecadado_uber;

@@ -2,7 +2,7 @@ import DAO.Arrecadado_diaDAO;
 import entity.Arrecadado_dia;
 
 public class App {
-    private static final String dia = null;
+
 
 
     public static void main(String[] args) throws Exception {
@@ -12,7 +12,7 @@ public class App {
         u.setDia("200240414");
         u.setPlaca_veiculo("SDI0I76");
         u.setId_motorista("Márcio Almeida de Souza");
-        u.setArrecadado_99(130.00);
+        u.setArrecadado_uber(130.00);
         u.setArrecadado_indrive(50.00);
         u.setArrecadado_outros(25.00);
 
