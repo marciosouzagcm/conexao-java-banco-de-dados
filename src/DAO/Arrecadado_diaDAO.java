@@ -13,7 +13,8 @@ public class Arrecadado_diaDAO {
 
 public void cadastrarArrecadado_dia(Arrecadado_dia Arrecadado_dia){
 
-// Consulta SQL para inserir os dados do usuário na tabela "arrecadado_dia";
+//Consulta SQL para inserir os dados do usuário na tabela arrecadado_dia
+
 String sql = "Insert into arrecadado_dia(dia, placa_veiculo, id_motorista, arrecadado_uber, arrecadado_99, arrecadado_indrive, arrecadado_outros) values (?,?,?,?,?,?,?)";
 
 // Inicializando o PreparedStatement para executar instruções SQL
