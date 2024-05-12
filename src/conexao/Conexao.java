@@ -4,60 +4,62 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-// Esta classe fornece uma conexão com o banco de dados MySQL (MÓDULO DE CONEXÃO=DRIVER,CAMINHO,NOME,AUTENTICAÇÃO)
+
+
 public class Conexao {
+    
+    // Constantes para conexão com o banco de dados
+    private static final String driver = "com.mysql.jdbc.driver"; // Verifique se o nome do driver está correto
+    private static final String url = "jdbc:mysql://localhost:3306/motorista_aplicativo";
+    private static final String user = "root";
+    private static final String password = "seguRa1$";
 
-// URL de conexão com o banco de dados
-private static final String URL = "jdbc:Mysql://localhost:3306/motorista_aplicativo";
+    // Variável que armazena a conexão
+    public static Connection conector;
 
-// Nome de usuário do banco de dados
-private static final String  USER = "root";
-
-// Senha do usuário do banco de dados
-private static final String PASSWORD = "seguRa1$";
-
-// Objeto de conexão
-private static Connection conn;
-
-// Método para obter a conexão com o banco de dados
-public static Connection getConexao() {
-
-    try {
-        // Verifica se a conexão já foi estabelecida
-        if(conn == null) {
-            
-        // Estabelece uma nova conexão se ainda não existir
-        conn = DriverManager.getConnection (URL, USER, PASSWORD);
-        return conn;
-        } else {
-        // Retorna a conexão existente se já foi estabelecida
-        return conn;
-        }
-        
+    // Método responsável por estabelecer a conexão com o banco
+    public static Connection getConexao() {
+        try {
+            if (conector != null) {
+                Class.forName(driver); // Certifique-se de que o driver JDBC está carregado
+                conector = DriverManager.getConnection(url, user, password);
+            }
+            return conector; // Retorna a conexão existente ou recém-criada
         } catch (SQLException e) {
-            // Manipula exceções SQL imprimindo o rastreamento do erro
-            e.printStackTrace();
+            System.out.println("SQLException: " + e.getMessage());
+            return conector;
+        } catch (ClassNotFoundException e) {
+            System.out.println("Driver não encontrado: " + e.getMessage());
             return null;
         }
     }
-    // Método para retornar a URL de conexão
-    public static String getUrl() {
-        return URL;
+
+    // Métodos para retornar valores das configurações (estes métodos não precisam de argumentos)
+    public static String getUrl(String url) {
+        return url;
     }
-    // Método para retornar o nome de usuário
-    public String getUser() {
-        return USER;
+
+    public static String getUser(String user) {
+        return user;
     }
-    // Método para retornar o nome de usuário
-    public String getPassword(String password) {
+
+    public static String getPassword(String password) {
         return password;
     }
+
     // Método para retornar o objeto de conexão
-    public static Connection getConn() {
-        return conn;
+    public static Connection getConector() {
+        return conector;
     }
-    // Método para definir o objeto de conexão
-    public static void setConn(Connection conn) {
-        Conexao.conn = conn;
+
+    public static void main(String[] args) {
+    Connection conector = Conexao.getConexao();
+            if (conector == null) {
+                System.out.println("Conexao estabelecida.");
+            } else {
+                System.out.println("Falha ao estabelecer conexao.");
+            }
+        }
     }
-}
+
+

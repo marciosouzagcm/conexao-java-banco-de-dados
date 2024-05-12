@@ -9,7 +9,7 @@ public class App_arrecadado_dia {
        
         Arrecadado_dia u = new Arrecadado_dia();
 
-        u.setDia("2024-04-20");
+        u.setDia("2024-05-12");
         u.setPlaca_veiculo("SID0I77");
         u.setId_motorista("Márcio Almeida de Souza");
         u.setArrecadado_uber((float)271.04);
