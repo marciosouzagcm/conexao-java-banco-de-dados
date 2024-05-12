@@ -118,10 +118,11 @@ public class TelaLogin extends JFrame implements ActionListener {
 
    
         public static void main(String[] args) {
-            telas.conexao conector = new conexao();
+        Conexao conector = new Conexao();
             // Inicialize sua conexão aqui
         
             // Crie uma instância de TelaLogin passando a conexão como parâmetro
             new TelaLogin();
         }
     }
+    
