@@ -67,4 +67,7 @@ public class Arrecadado_dia {
     public void setArrecadado_outros(float arrecadado_outros) {
         this.arrecadado_outros = arrecadado_outros;
     }
+
+public static void main(String[] args) {
+}
 }
