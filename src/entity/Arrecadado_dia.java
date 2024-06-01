@@ -1,18 +1,21 @@
 package entity;
 
-// Classe que representa um usuário
+/**
+ * Classe que representa a arrecadação do dia.
+ */
 public class Arrecadado_dia {
 
-    public static String dia;
-    private static String placa_veiculo;
-    private static String id_motorista;
-    private static float arrecadado_uber;
-    private static float arrecadado_99;
-    private static float arrecadado_indrive;
-    private static float arrecadado_outros;
+    // Atributos da arrecadação do dia
+    private String dia;
+    private String placa_veiculo;
+    private String id_motorista;
+    private float arrecadado_uber;
+    private float arrecadado_99;
+    private float arrecadado_indrive;
+    private float arrecadado_outros;
 
-    // Atributos do usuário
-    public static String getDia() {
+    // Getters e setters para os atributos
+    public String getDia() {
         return dia;
     }
 
@@ -20,7 +23,7 @@ public class Arrecadado_dia {
         this.dia = dia;
     }
 
-    public static String getPlaca_veiculo() {
+    public String getPlaca_veiculo() {
         return placa_veiculo;
     }
 
@@ -28,7 +31,7 @@ public class Arrecadado_dia {
         this.placa_veiculo = placa_veiculo;
     }
 
-    public static String getId_motorista() {
+    public String getId_motorista() {
         return id_motorista;
     }
 
@@ -36,7 +39,7 @@ public class Arrecadado_dia {
         this.id_motorista = id_motorista;
     }
 
-    public static Float getArrecadado_uber() {
+    public float getArrecadado_uber() {
         return arrecadado_uber;
     }
 
@@ -44,7 +47,7 @@ public class Arrecadado_dia {
         this.arrecadado_uber = arrecadado_uber;
     }
 
-    public static Float getArrecadado_99() {
+    public float getArrecadado_99() {
         return arrecadado_99;
     }
 
@@ -52,7 +55,7 @@ public class Arrecadado_dia {
         this.arrecadado_99 = arrecadado_99;
     }
 
-    public static float getArrecadado_indrive() {
+    public float getArrecadado_indrive() {
         return arrecadado_indrive;
     }
 
@@ -60,14 +63,11 @@ public class Arrecadado_dia {
         this.arrecadado_indrive = arrecadado_indrive;
     }
 
-    public static float getArrecadado_outros() {
+    public float getArrecadado_outros() {
         return arrecadado_outros;
     }
 
     public void setArrecadado_outros(float arrecadado_outros) {
         this.arrecadado_outros = arrecadado_outros;
     }
-
-public static void main(String[] args) {
-}
 }

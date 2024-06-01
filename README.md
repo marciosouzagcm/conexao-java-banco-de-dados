@@ -12,6 +12,7 @@ Fase 2 - criação do Banco de dados Mysql;
 Fase 3 - Realizar a conexão usuario com o banco de dados mysql utilizando a linguagem java;
     tabelas: 3.1 public class App_arrecadado_dia();
              3.2 public class App_gastos();
+             3.3 public class App_desempenho_dia();
 
 Fase 4 - Desenvolvimento da interface;
    TelaLogin 4.1: 
